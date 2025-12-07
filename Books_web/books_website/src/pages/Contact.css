@@ -1,0 +1,136 @@
+/* --------------------
+   SECTION LAYOUT
+--------------------- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+}
+
+.section-common--heading {
+  font-size: 32px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.section-common--subheading {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+  font-size: 16px;
+}
+
+/* GRID SYSTEM */
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* --------------------
+   CONTACT FORM
+--------------------- */
+.section-contact {
+  margin-top: 40px;
+}
+
+.contact-content {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.contact-content label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+/* FORM INPUTS */
+.contact-content input,
+.contact-content textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 4px;
+  transition: 0.3s ease;
+}
+
+/* HOVER + FOCUS EFFECT */
+.contact-content input:hover,
+.contact-content input:focus,
+.contact-content textarea:hover,
+.contact-content textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0px 10px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+
+/* SPACING */
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+.mt-3 {
+  margin-top: 20px;
+}
+
+/* --------------------
+   BUTTON
+--------------------- */
+.btn.contact-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* BUTTON HOVER EFFECT */
+.btn.contact-btn:hover {
+  background: #43a047;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+/* --------------------
+   IMAGE AREA
+--------------------- */
+.contact_image {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Soft floating animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* --------------------
+   RESPONSIVE DESIGN
+--------------------- */
+@media (max-width: 900px) {
+  .grid-two--cols {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,82 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove horizontal scroll */
+body {
+  overflow-x: hidden;
+  /* padding-top: 80px; */
+}
+
+/* Main navbar container */
+.nav-container {
+  width: 100%;
+  padding: 15px 40px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  z-index: 9999;
+  
+}
+
+/* LOGO (icon + text) */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon + text */
+}
+
+/* Logo text */
+.logo h1 {
+  color: #FF8200;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Icon styling */
+.logo .icon {
+ color: #FF8200;
+   font-size: 35px; /* increase icon size here */
+}
+
+/* Nav menu container */
+.nav-box .items {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav items */
+.nav-box .items li {
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-box .items li:hover {
+  color:blue;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-box .items {
+    gap: 20px;
+  }
+}
+

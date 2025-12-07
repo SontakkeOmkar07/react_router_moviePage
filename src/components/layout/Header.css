@@ -1,0 +1,111 @@
+/* Top Banner Section */
+.top_txt {
+  background-color: #0ea5e9; /* cyan-500 */
+  color: white;
+  padding: 8px 0;
+  font-size: 15px;
+}
+
+.top_txt .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_txt .sing_in_up a {
+  margin-left: 15px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.top_txt .sing_in_up a:hover {
+  text-decoration: underline;
+}
+
+/* Main Navbar Container */
+.section-navbar {
+  background-color: #f8fafc; /* light */
+  width: 100%;
+  padding: 10px 0 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Brand / Logo Section */
+.navbar-brand p {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a; /* dark slate */
+  margin: 18px 0;
+  cursor: pointer;
+}
+
+/* Navbar UL */
+.navbar ul {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.navbar {
+  padding-bottom: 16px;
+}
+
+/* Navbar Items */
+.nav-item {
+  list-style: none;
+}
+
+/* NavLink Default */
+.nav-link,
+.nav-item a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #0f172a;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-link:hover,
+.nav-item a:hover {
+  color: #2563eb; /* blue-600 */
+}
+
+/* Active Link */
+.nav-link.active {
+  color: #ef4444 !important; /* red-500 */
+  font-weight: 700;
+}
+
+/* Custom Active Style (for inline style NavLink) */
+.nav-item a.active {
+  color: #ef4444 !important;
+  font-weight: 700;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .top_txt .head {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    padding: 12px 0;
+  }
+
+  .navbar-brand {
+    text-align: center;
+  }
+}
